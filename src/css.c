@@ -23,7 +23,7 @@ void ri_css_v2_5_hdr_create(struct image *image)
 
 	/* get local time and date */
 	gettimeofday(&tv, NULL);
-	seconds = tv.tv_sec;
+	seconds = 1 ; // tv.tv_sec;
 	date = localtime(&seconds);
 
 	if (!date) {
@@ -80,7 +80,7 @@ void ri_css_v1_8_hdr_create(struct image *image)
 
 	/* get local time and date */
 	gettimeofday(&tv, NULL);
-	seconds = tv.tv_sec;
+	seconds = 1; //tv.tv_sec;
 	date = localtime(&seconds);
 
 	if (!date) {
@@ -137,7 +137,7 @@ void ri_css_v1_5_hdr_create(struct image *image)
 
 	/* get local time and date */
 	gettimeofday(&tv, NULL);
-	seconds = tv.tv_sec;
+	seconds = 1 ; // tv.tv_sec;
 	date = localtime(&seconds);
 
 	if (!date) {
